@@ -49,12 +49,13 @@ int binary_search(int A[],int n , int data)
 int main()
 {
 
-int ara[]={1,2,5,4,9,8,7,6,3,5};
+int ara[]={1,2,10,4,9,8,7,6,3,5};
 int n = sizeof(ara) / sizeof(ara[0]);
 
 // Binary search working only in shorted array 
  sort(ara,ara+n);
 
+// sorted array 
  for (auto &&i : ara)
  {
     cout<<i<<" ";
@@ -72,3 +73,5 @@ int n = sizeof(ara) / sizeof(ara[0]);
 
  
 }
+
+// Time Complexity log 2 base => log(n)
